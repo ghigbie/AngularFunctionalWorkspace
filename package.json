@@ -4,7 +4,7 @@
   "description": "This repo is dedicated to practice with AngalarJS.",
   "main": "server/app.js",
   "scripts": {
-    "start": "node server/app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
