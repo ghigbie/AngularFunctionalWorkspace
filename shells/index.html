@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width">
         <title>Functional Angular App</title>
         <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./../public/styles.main.css">
         
     </head>
     <body ng-controller>
@@ -19,5 +19,15 @@
         <div class="contaienr main-content">
             <div ng-view></div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted text-center">
+                    <a href="/">Some Link</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./../node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="./../node_modules/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="./../node_modules/angular-route/angular-route.min.js"></script>
     </body>
 </html>
