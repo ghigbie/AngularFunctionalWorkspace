@@ -1,0 +1,19 @@
+{
+  "name": "angular-functional-workspace",
+  "version": "1.0.0",
+  "description": "This repo is dedicated to practice with AngalarJS.",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghigbie/AngularFunctionalWorkspace.git"
+  },
+  "author": "George Higbie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghigbie/AngularFunctionalWorkspace/issues"
+  },
+  "homepage": "https://github.com/ghigbie/AngularFunctionalWorkspace#readme"
+}
