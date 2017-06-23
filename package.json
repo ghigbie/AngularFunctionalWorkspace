@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ghigbie/AngularFunctionalWorkspace/issues"
   },
-  "homepage": "https://github.com/ghigbie/AngularFunctionalWorkspace#readme"
+  "homepage": "https://github.com/ghigbie/AngularFunctionalWorkspace#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
