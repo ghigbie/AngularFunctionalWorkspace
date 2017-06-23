@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ghigbie/AngularFunctionalWorkspace#readme",
   "dependencies": {
     "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
     "express": "^4.15.3"
   }
 }
