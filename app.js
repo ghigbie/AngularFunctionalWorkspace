@@ -5,10 +5,20 @@ const express = require('express'),
 app.set('port', process.env.PORT);
 app.set('ip', process.env.IP);
 
-app.use(express.static(__dirname + "/public/shells/"));
+app.use(express.static(__dirname + "/public/shells"));
 
 app.get('/', (req, res) =>{
-    res.sendFile(path.join(__dirname + 'index.html'));
+    console.log("home was hit");
+    res.render("home.ejs");
+});
+
+app.get('/2', (req, res) => {
+    console.log("page two was hit");
+    res.render("notfound.ejs");
+});
+
+app.get('*', (req, res) => {
+    res.render("notfound.ejs");
 });
 
 app.listen(app.get('port'), app.get('ip'), () => {
