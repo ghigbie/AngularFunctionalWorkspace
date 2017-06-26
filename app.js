@@ -9,7 +9,9 @@ app.set('view engien', 'ejs');
 //app.use(express.static(__dirname));
 
 app.use("/public", express.static(path.join(__dirname, "/public")));
-app.use("/node_modules", express.static(path.join(__dirname, "node_modules")));
+app.use("/node_modules", express.static(path.join(__dirname, "/node_modules")));
+app.use("/modules", express.static(path.join(__dirname, "/modules")));
+app.user("/controllers", express.static(path.join(__dirname, "/controllers")));
 
 
 app.get('/', (req, res) =>{
