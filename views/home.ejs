@@ -1,8 +1,8 @@
 <% include partials/header %>
 
   <h1>This is the HOME PAGE!</h1>
-  <div ng-app>
-      <div>
+  <div ng-app="homeApp">
+      <div ng-controller="homeController">
           <input type="text" name="yo" ng-model="yo">
           <div>{{ yo }}</div>
       </div>
