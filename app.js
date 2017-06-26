@@ -1,5 +1,5 @@
 const express = require('express'),
-         //path = require('path'),
+         path = require('path'),
           app = express();
           
 app.set('port', process.env.PORT);
@@ -8,7 +8,9 @@ app.set('view engien', 'ejs');
 //__dirname = __dirname + "/shells";
 //app.use(express.static(__dirname));
 
-app.use(express.static(__dirname + "/public"));
+app.use("/public", express.static(path.join(__dirname, "/public")));
+app.use("/node_modules", express.static(path.join(__dirname, "node_modules")));
+
 
 app.get('/', (req, res) =>{
     console.log("home was hit");
