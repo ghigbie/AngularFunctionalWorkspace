@@ -1,20 +1,24 @@
 const express = require('express'),
-         path = require('path'),
+         //path = require('path'),
           app = express();
           
 app.set('port', process.env.PORT);
 app.set('ip', process.env.IP);
+app.set('view engien', 'ejs');
+//__dirname = __dirname + "/shells";
+//app.use(express.static(__dirname));
 
-app.use(express.static(__dirname + "/public/shells"));
+app.use(express.static(__dirname + "/public"));
 
 app.get('/', (req, res) =>{
     console.log("home was hit");
+    console.log(__dirname);
     res.render("home.ejs");
 });
 
 app.get('/2', (req, res) => {
     console.log("page two was hit");
-    res.render("notfound.ejs");
+    res.render("page2.ejs");
 });
 
 app.get('*', (req, res) => {
